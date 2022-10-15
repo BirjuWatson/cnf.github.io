@@ -22,19 +22,22 @@ body
     top:15px;
 }
 .nav{
+    display:flex;
+    justify-content:space-evenly;
     position: fixed;
     width: 100%;
     min-width: 100%;
     z-index:1;
     overflow:hidden;
 }
-ul {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black;
     font-size: 20px;
+    min-width:100%;
 }
 
 li {
@@ -54,20 +57,88 @@ li {
             background-color: #010080;
         }
 #add {
+    display:flex;
+    justify-content:center;
     position: absolute;
     top: 100vh;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: white;
+    background-color: #0000008c;
+    background-image:linear-gradient(180deg,blue,#000000);
 }
 .fourchannel {
-    top: 30px;
-    left: 45px;
-    position: absolute;
-    height: 30vh;
+    top: 50%;
+    min-width:90%;
+    left: 45%;
+    max-height: 42vh;
     width: 70vw;
-    background-color: black;
     background-image: url(https://tse4.mm.bing.net/th?id=OIP.up7cJWPhmuknNKh3mgRBIAHaHa&pid=Api&P=0);
     background-size:cover;
+    box-shadow: 0 0.2em 0.5em 20px black;
 }
- 
+.fourinfo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45vh;
+    font-family: 'Microsoft YaHei';
+    background-color: white;
+    border: 4px solid black;
+    padding: 4px;
+    background-image: linear-gradient(180deg,blue,#000000);
+    color:white;
+    padding:0;
+    margin:0;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.camlist{
+     list-style-type:none;
+     background-color:#00b9ff25;
+     margin:2px;
+ }
+.price{
+    border-top: 1px solid black;
+    border-bottom:1px solid black;
+}
+.lastsec {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg,black,blue);
+    margin:0;
+    padding:0;
+    top: 200vh;
+}
+.formpage{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:10vh;
+    left:22%;
+}
+.inputblock{
+    background-color:#f8f8f80a;
+    padding:1em;
+    margin:8px;
+    color:white;
+    border:2px solid
+}
+.submitbutton{
+    padding:2em 6em;
+    margin-top:4em;
+    background-color:#00ff1dd9;
+    border-radius:10px;
+}
+.footer{
+    position:absolute;
+    background-color:black;
+    height:40vh;
+    width:100vw;
+    top:60vh;
+}
